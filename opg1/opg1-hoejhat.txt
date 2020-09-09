@@ -18,4 +18,4 @@ canvas kan have størrelsen 400,600
 strokeWeoght() er tykkelsen på stregen. 
 fill() udfylder figuren med en farve. 
 
-Husk at koordinaterne 0,0 er øverste venstrehjørne (normalt vil det være nederste venstre) og er efter princippet: "hen ad vejen, ned til stegen". X,Y.
+Husk at koordinaterne 0,0 er øverste venstrehjørne (normalt vil det være nederste venstre) og er efter princippet: "hen ad vejen, ned til stegen". X,Y. 
