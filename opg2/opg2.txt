@@ -4,19 +4,19 @@ Dette er en opgave i at bruge koordinatsystemet med en variabel.
 Lav et program som kan beregne C i en retvinklet trekant, og udskriv din trekant til skærmen.
 
 Du kan bruge dette program med kommentarer som jeg har lavet.
+Læst først alle linjer og prøv at forstå hvad de gør. Selve opgaven er de nederste tre linjer.
 
 *****************
 //Variable deklaration. Vi navngiver og bestemmer typen for en variabel. 
 // float betyder at variablen kan indeholde et kommatal. Det skal vi fordi pow() forlanger at typen skal være float. a er navnet på den første variabel, b er navnet på den anden. 
 float a;
 float b;
+float c; 
 
 // Initiering af variablen. Vi tilføjer en værdi til variablen
-a= 120;
-b=180;
-
-// Deklaration og Initiering af en variabel i samme linije. 
-float c = 0;
+a = 120;
+b = 180;
+c = 0;
 
 // angiver størrelsen af canvas
 size(800,600);
