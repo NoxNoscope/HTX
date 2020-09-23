@@ -33,4 +33,14 @@ Parameter
 
 Cammelback notation
 
+Opgave 4:
+	a) Undersøg for hver primitiv datatype, hvor meget plads (bytes) der allokeres i hukommelsen når man deklarerer en variabel af datatypen. (https://data-flair.training/blogs/java-data-types/) 
+
+	b) Skriv et program som ved hjælp af funktioner, beviser hvilke minimums- og maksimumsværdier for de primitive datatype kan indeholde.Find evt. inspiration i programmet testDatatyper, som du finder på github.
+
+	c) Noter alle dine resultater fra opg A og opg B 
+
+	d) Hvad giver kvadratroden af 2 gange med kvadratroden af 2? Lav et først et program med sqrt() og herefter med Math.squrt(). Forklar forskellen på de to funktioner og redegør for resultatet af de to instruktioner. 
+
+
 
