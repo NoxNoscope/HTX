@@ -15,5 +15,5 @@ for (i=0;i<256+1;i++){
 }
 
 Jeg oplever, at så snart i>256 udskriver programmet et '?'. Der er altså em uoverensstemmelse mellem den teoretiske maximum værdi og den værdi jeg finder frem til i mit forsøg.
-Den maksimale værdi for datatype char i mit forsøg var 256.
+Den maksimale værdi for datatype char i mit forsøg var 256 hvilket faktisk er antallet af tegn i ASCII tabellen.
  
