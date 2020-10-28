@@ -5,7 +5,7 @@ void setup() {
 }
 
 void parseFile() {
-  // Open the file from the createWriter() example
+  // Open the file from the createWriter() example 1
   BufferedReader reader = createReader("positions.txt");
   String line = null;
   try {

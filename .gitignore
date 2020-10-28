@@ -1,4 +1,5 @@
 # exclude everything except directory foo/bar
+/uge38/løsning/*
 
 /uge41/løsning/*
 /uge42/løsning/*
