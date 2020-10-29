@@ -1,4 +1,4 @@
-## Velkommen til min opgave bank
+## Velkommen til min opgavebank
 - Forstå koordinatsystemet i processing [Link til opgave](https://github.com/ChrisBruhn/HTX/tree/master/uge37/opgave.txt)
 - Forstå datatypen integer og funktioner [Link til opgave](https://github.com/ChrisBruhn/HTX/tree/master/uge38/opgave.txt)
 - Forstå primitive datatyper og hvor store tal en computer kan arbejde med. [Link til opgave](https://github.com/ChrisBruhn/HTX/tree/master/uge38/opgave.txt) 
@@ -7,3 +7,4 @@
 
 - Ekesempel på løsning af en opgve [Link til opgave](https://github.com/ChrisBruhn/HTX/tree/master/uge38/datatypechar.txt)
 
+Løsninger til alle opgaver ligger i opgavemappen, når denne er frigivet.
