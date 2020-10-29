@@ -3,6 +3,8 @@
 - Forstå datatypen integer og funktioner [Link til opgave](https://github.com/ChrisBruhn/HTX/tree/master/uge38/opgave.txt)
 - Forstå primitive datatyper og hvor store tal en computer kan arbejde med. [Link til opgave](https://github.com/ChrisBruhn/HTX/tree/master/uge38/opgave.txt) 
 
+- Ekesempel på løsning af en opgve Eksempel på opgave [Link til opgave](https://github.com/ChrisBruhn/HTX/tree/master/uge38/datatypechar.txt)
+
 
 You can use the [editor on GitHub](https://github.com/ChrisBruhn/HTX/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
