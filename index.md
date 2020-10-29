@@ -1,6 +1,7 @@
 ## Velkommen til min opgave bank
-- Forstå koordinatsystemet i processing [Opgave](https://github.com/ChrisBruhn/HTX/tree/master/uge37/opgave.txt)
-- Forstå datatypen integer og funktioner [Opgave](https://github.com/ChrisBruhn/HTX/tree/master/uge38/opgave.txt)
+- Forstå koordinatsystemet i processing [Link til opgave](https://github.com/ChrisBruhn/HTX/tree/master/uge37/opgave.txt)
+- Forstå datatypen integer og funktioner [Link til opgave](https://github.com/ChrisBruhn/HTX/tree/master/uge38/opgave.txt)
+- Forstå primitive datatyper og hvor store tal en computer kan arbejde med. [Link til opgave](https://github.com/ChrisBruhn/HTX/tree/master/uge38/opgave.txt) 
 
 
 You can use the [editor on GitHub](https://github.com/ChrisBruhn/HTX/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
