@@ -27,7 +27,7 @@ Opg2
 Pytagoras
 Dette er en opgave i at bruge koordinatsystemet med en variabel.
 
-Lav et program som kan beregne længden af C i en retvinklet trekant, og udskriver trekanten til skærmen og længden til consol.
+Lav et program som kan beregne længden af C i en retvinklet trekant, og som tegner trekanten på skærmen og længden til consol.
 
 Du kan bruge dette program med kommentarer som jeg har lavet.
 Læst først alle linjer og prøv at forstå hvad de gør. Selve opgaven er de nederste tre linjer.
