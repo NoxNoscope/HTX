@@ -26,11 +26,11 @@ i draw - mit hovedprogram:
 
 Opret en funktion howOldInMonths() som modtager parameteren int myBirthMonth og returnerer en int.
 
-	hvis myBirthMonth() er større end month() så har du ikke haft fødselsdag
-		så skal du returnere month()+(howOld-1()*12)
+	hvis myBirthMonth er større end month() så har du ikke haft fødselsdag
+		så skal du returnere month()+((howOld()-1)*12)
 
 	hvis month() er større en myBirthMonth() så har du haft fødselsdag 
-		så skal du returnere month()-myBirthMonth()+(howOld()*12)
+		så skal du returnere month()-myBirthMonth+(howOld()*12)
 
 
 Funktionen skal returnere en integer værdi med antallet af måneder man er gammel.
