@@ -1,6 +1,4 @@
 # exclude everything except directory foo/bar
 
-/uge44/løsning/*
-/uge45/løsning/*
 /file-io/*
 
