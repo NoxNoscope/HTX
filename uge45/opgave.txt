@@ -24,7 +24,7 @@ i draw - mit hovedprogram:
 	Kald funktionen howOldInMonths() med parameteren myBirthMonth
 	udskriv resultatet af howOldInMonths()
 
-Opret en funktion howOldInMonths() som modtager parameteren int myBirthMonth og returnerer en int.
+Opret en funktion howOldInMonths() som modtager parameteren int myBirthMonth og myBirthYear, og returnerer en int.
 
 	hvis myBirthMonth er større end month() så har du ikke haft fødselsdag
 		så skal du returnere month()+((howOld()-1)*12)
