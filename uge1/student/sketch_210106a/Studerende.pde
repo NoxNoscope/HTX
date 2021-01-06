@@ -1,4 +1,4 @@
-class Studerende {
+class Studerende extends DisplayStudent {
 
   String school;
   String name;
@@ -16,17 +16,7 @@ class Studerende {
     this.settelment= se;
   }
 
-  void printStudent() {
 
-    text(this.school, 50, 80);
-    text(this.name, 50, 100);
-    text("hvor fattig er "+this.name, 50, 120);
-    fill(255);
-    rect(180, 110, 100, 10);
-    fill(255, 0, 0);
-    rect(180, 110, poorness, 10);
-    fill(0);
-  }
 
   void setSchool(String s) {
     this.school =s;
@@ -40,15 +30,30 @@ class Studerende {
     this.gender = g;
   }
 
+
   void getSchool() {
     println(this.school);
   }
 
-  void getGender() {
+  String getGender() {
+    String g;
     if (gender == true) {
-      println("male");
+      g="male";
     } else {
-      println("female");
+      g="female";
     }
+    return g;
+  }
+
+  String getName() {
+    return this.name;
+  }
+
+  int getPoorness() {
+    return this.poorness;
+  }
+
+  String getSettelment() {
+    return this.settelment;
   }
 }
