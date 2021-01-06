@@ -1,12 +1,15 @@
-class Studerende extends DisplayStudent {
+// denne klasse indeholder en studerende
+class Studerende  {
 
+  // klassens tilstand/ attributter
   String school;
   String name;
   boolean gender;
   int poorness;
   String settelment;
+  int birthYear;
 
-
+// konstuktør med parameter
   Studerende(String s, String n, boolean g, int p, String se) {
 
     this.school = s;
@@ -16,7 +19,8 @@ class Studerende extends DisplayStudent {
     this.settelment= se;
   }
 
-
+//klassens metoder:
+//setters
 
   void setSchool(String s) {
     this.school =s;
@@ -30,9 +34,9 @@ class Studerende extends DisplayStudent {
     this.gender = g;
   }
 
-
-  void getSchool() {
-    println(this.school);
+// getters
+  String getSchool() {
+   return this.school;
   }
 
   String getGender() {
