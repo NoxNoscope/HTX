@@ -48,7 +48,7 @@ class Studerende  {
     }
     return g;
   }
-
+   
   String getName() {
     return this.name;
   }
