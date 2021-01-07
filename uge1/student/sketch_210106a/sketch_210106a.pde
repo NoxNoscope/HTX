@@ -4,6 +4,8 @@ Studerende s2;
 Studerende s3;
 Studerende s4;
 Studerende s5;
+Studerende s6;
+
 // deklaration af mit display klasse - denne klasse håndterer x og y koordinater så jeg kan bare tilføre en studenrende uden at tænke på x og y pos 
 DisplayStudent d;
 
@@ -21,6 +23,7 @@ void draw() {
   s3 = new Studerende("HHX","Joan", false, 5, "ude");
   s4 = new Studerende("HTX","Jeppe", true, 95, "hjemme");
   s5 = new Studerende("STX","Johan", false, 10, "ude");
+  s6 = new Studerende("STX", "Jonatan",false,37,"ude" );
   
   // initiering af mit display klasse
   d = new DisplayStudent();
@@ -31,6 +34,7 @@ void draw() {
   d.setStud(s3);
   d.setStud(s4);
   d.setStud(s5);
+  d.setStud(s6);
   
   
  // skriv alle studerende ud til skærmen 
