@@ -17,11 +17,12 @@ class Vehicle {
 
 
   //konstruktør
-  Vehicle(float a, float e, float t) {
+  Vehicle(float a, float e, float t, String f) {
     // auto kode
     afstand= a;
     egenv=e;
     totalv=t;
+    fuel = f;
   }
 
   //klassens metoder
@@ -40,6 +41,10 @@ class Vehicle {
   void setTotalv(float t) {
     totalv=t;
   }
+  
+  void setHK(int h){
+  this.hk=h;
+  }
 
   // getters
   float getAfstand() {
@@ -48,5 +53,9 @@ class Vehicle {
 
   float getEgenv() {
     return egenv;
+  }
+  
+  float getLoad(){
+    return totalv-egenv;
   }
 }

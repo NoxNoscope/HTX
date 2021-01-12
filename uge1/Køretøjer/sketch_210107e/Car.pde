@@ -7,9 +7,9 @@ class Car extends Vehicle{
   
   //konstruktør
   
-  Car(float a, float e, float t,int p){
-  super(a,e,t);
-  persons =p;
+  Car(float a, float e, float t,String p){
+  super(a,e,t,p);
+  //persons =p;
   
   }
   
