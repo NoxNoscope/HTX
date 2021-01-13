@@ -32,20 +32,3 @@ void mouseClicked() {
       text("Turning on the light in "+house.getRoomName(), 100, 700);
     }
 }
-
-
-
-void checkHouse(Room[] house) { 
-  boolean found=false;
-  for (int i=0; i< house.length; i++) {
-    if (house[i].isLightOn() == true) {
-      println ("WOW turn off the light in the "+house[i].whatRoom());
-      found = true;
-    }
-  }
-  if (!found) {
-    println("All right! You'r ready to go!");
-  } else {
-    println("you forgot something");
-  }
-}
