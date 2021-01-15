@@ -1,5 +1,5 @@
 //lav et rum //<>// //<>// //<>//
-Room[] house = new Room [6];
+Room[] house = new Room[6];
 
 
 
