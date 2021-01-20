@@ -2,10 +2,11 @@
 /games/*
 /file-io/*
 /uge47/*.docx
-/uge2/løsning/*
+
 *.aux
 *.log
 *.dvi
 *.log
 *.gz
 *.tex
+*.out
