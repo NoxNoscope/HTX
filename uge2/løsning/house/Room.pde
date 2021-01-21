@@ -58,5 +58,6 @@ class Room {
   triangle(50, 290, 250, 150, 450, 290);
   // rydder op
   fill(205);
+  
   }
 }

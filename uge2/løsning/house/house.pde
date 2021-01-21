@@ -1,5 +1,7 @@
 //lav et rum //<>// //<>// //<>//
 Room[] house = new Room[6];
+//lav et objekt som håndterer output tekst
+View v = new View(100, 550);
 
 
 
@@ -13,51 +15,54 @@ void setup() {
   house[3] = new Room("Toilet", true, 100, 410);
   house[4] = new Room("Bedroom", false, 210, 410);
   house[5] = new Room("Bathroom", false, 320, 410);
+  // tegn firkant til tekst
+  v.drawOutPutBox();
 }
 
 void draw() {
-
-
   // tegn rum
   for (int i =0; i<house.length; i++)
   {
     house[i].drawRoof();
     house[i].drawRoom();
   }
+  // check at alt lys er slukket
   checkHouse();
 }
 
 void mouseClicked() {
   // lav baggrund
   background(205);
-  fill(105);
-  rect(80, 680, 300, 30);
-  fill(250);
   for (int i =0; i<house.length; i++)
   {
     // find ud af om vi tænder eller slukker lyset
     if (house[i].isRoomClicked(mouseX, mouseY))
       if (house[i].getIsLightOn()) {
         house[i].setLight(false);
-        text("Turning off the light in "+house[i].getRoomName(), 100, 700);
       } else {
         house[i].setLight(true);
-        text("Turning on the light in "+house[i].getRoomName(), 100, 700);
       }
   }
 }
 
 void checkHouse() {
   boolean found=false;
+  // jeg er nød til at have et ekstra index så jeg får et ordnet array fra start
+  String[] forgottenRooms=new String[house.length];
+  // til mit array har jeg brug for et index
+  int roomIndex=0;
+
   for (int i=0; i< house.length; i++) {
     if (house[i].getIsLightOn() == true) {
-      println ("WOW turn off the light in the "+house[i].getRoomName());
+      forgottenRooms[roomIndex]=house[i].getRoomName();
+      v.drawForgoottenRooms(forgottenRooms);
       found = true;
+      roomIndex++;
     }
   }
   if (!found) {
-    println("All right! You’r ready to go!");
+    v.drawReadyToGo();
   } else {
-    println("you forgot something");
+    v.drawForgot();
   }
 }
