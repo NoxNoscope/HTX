@@ -1,67 +1,82 @@
-
-// import af biblioteket
 import controlP5.*;
 
-//deklaration af variablen cp5 til type ControlP5
 ControlP5 cp5;
+int red = color(255,0,0);
 
-//deklaration af variablen textfield og button1 til typerne Textfield og Button 
-Textfield textfield;
-Button button1;
-
-float number = 0.0;
+Slider abc;
 
 void setup() {
-  size(500, 300);
-  // vi vælger en font som skrifttype
-  PFont font = createFont("arial", 24);
+  size(1000, 1000);
+    cp5 = new ControlP5(this);
+  
 
-  // Kontakt til ConptrolP5 Biblioteket - initieringen
-  cp5 = new ControlP5(this);
-
-  // Tekst-feltet hvor tallet skal indtastes
-  // initiering af textfield
-  textfield=cp5.addTextfield("input");
-  // nu sætter vi alle attributter for objektet ved brug af set
-  textfield.setPosition(50, 80)
-    .setSize(150, 50)
-    .setFont(font)
-    .setColor(color(255))
-    .setColorCursor(color(255))
-    .setAutoClear(false)
-    .setLabel("")
-    ;
-
-  // Knappen der er knyttet til funktionen generate()
-  // initiering af button1, bemærk vi binder en funktion til knappen. Hvis der trykkes på den skal den køre funktionen generate
-  button1=cp5.addButton("generate");
-  // nu sætter vi alle attributter for objektet ved brug af set
-  button1.setPosition(230, 85)
-    .setSize(180, 40)
-    .setLabel("Læs tallet")
-    .setFont(font)
-    ;
-  // set font = skrittype
-  textFont(font);
+     ;
+  
+  // create another slider with tick marks, now without
+  // default value, the initial value will be set according to
+  // the value of variable sliderTicks2 then.
+     
+  // add a vertical slider
+  cp5.addSlider("R")
+     .setPosition(0, height - 50)
+     .setSize(200,50)
+     .setRange(0,255)
+     .setValue(128)
+     ;
+     cp5.addSlider("G")
+     .setPosition(0,height - 100)
+     .setSize(200,50)
+     .setRange(0,255)
+     .setValue(128)
+     ;
+     cp5.addSlider("B")
+     .setPosition(0,height - 150)
+     .setSize(200,50)
+     .setRange(0,255)
+     .setValue(128)
+     ;
+     
+     
 }
 
-void draw() {
-  background(0, 151, 156);
-  fill(255);
+int x1 = 0;
+int y1 = 0;
+int x2 = 0;
+int y2 = 0;
+int x3 = 0;
+int y3 = 0;
+
+void draw(){
   
-  // validering af inputdata
-  if (Float.isNaN(number)) {
-    text("Tallet er indtastet forkert", 50, 200);
-  } else {
-    text(number, 50, 200);
+}
+
+void mousePressed() {
+  trimiddle(mouseX, mouseY);
+  println("green");
+}
+
+void trimiddle(int x, int y) {
+  if (x1 == 0) {
+    x1 = x;
+    y1 = y;
+  } else if (x2 == 0) {
+    x2 = x;
+    y2 = y;
+  } else if (x3 == 0) {
+    x3 = x;
+    y3 = y;
+    trianglePoints();
   }
 }
 
-// Se linje 37, hvis der trykke på knappe aktiveres programmet 
-public void generate() {
-  // Tallet hentes som en tekststreng i tekst-feltet input
-  String input = cp5.get(Textfield.class, "input").getText(); // hent det som står i tekstfeltet
-  input = input.replace(',', '.');  // Accepter dansk komma
-  number = float(input); // konverter tallet til et float
-  textfield.clear(); // sletter tallet
+void trianglePoints() {
+  triangle(x1,y1,x2,y2,x3,y3);
+  x1 = 0;
+  y1 = 0;
+  x2 = 0;
+  y2 = 0;
+  x3 = 0;
+  y3 = 0;
+  println("trianglePoints");
+
 }
